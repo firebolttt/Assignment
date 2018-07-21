@@ -39,6 +39,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.firebolt.assignment.App;
+import com.firebolt.assignment.R;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
@@ -128,7 +129,7 @@ public abstract class BaseFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setUpNetworkReceiver();
         dialog = new AppCompatDialog(getActivity());
-        dialog.setContentView(new ProgressBar(App.getContext()));
+        dialog.setContentView(R.layout.loader_dialog);
         //progressBar = new ProgressBar(App.getContext());
     }
 

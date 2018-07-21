@@ -17,7 +17,7 @@ public class APIConstants {
                 break;
 
             case RELEASE:
-                //setupProductionEnvironment();
+                setupProductionEnvironment();
                 break;
 
             default:
@@ -31,7 +31,7 @@ public class APIConstants {
     }
 
     private static void setupProductionEnvironment() {
-        BASE_URL = "https://live.reqres.in/";
+        BASE_URL = "https://reqres.in/";
     }
 
     public enum APIEnvironment {
