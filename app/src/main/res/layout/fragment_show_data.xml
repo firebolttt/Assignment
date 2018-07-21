@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.firebolt.assignment.mainmodule.MainViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_data_available"
+            android:visibility="@{viewModel.txtVisibility}"/>
+        <LinearLayout
+            android:id="@+id/linList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{viewModel.listVisibility}">
+
+            <include
+                android:id="@+id/common_list"
+                layout="@layout/common_recyclerview" />
+        </LinearLayout>
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+            <include
+                android:id="@+id/common_list"
+                layout="@layout/common_recyclerview"  />
+        </android.support.v4.widget.SwipeRefreshLayout>-->
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="str_appcompact_transaction">AppCompactTransactions</string>
+    <string name="connecttointernet">Network not available</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data_available">NO Data Available</string>
+    <string name="assignment">ASSIGNMENT</string>
+</resources>
